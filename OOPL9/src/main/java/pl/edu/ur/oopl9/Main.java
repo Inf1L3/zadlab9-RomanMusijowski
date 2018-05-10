@@ -5,17 +5,66 @@
  */
 package pl.edu.ur.oopl9;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.TreeSet;
+
 /**
  *
  * @author maarchyl
  */
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
+
+
     public static void main(String[] args) {
-        // TODO code application logic here
+        public static void main(String[] args) {
+            Random rand = new Random();
+            int[] zad_1 = new int[100];
+
+
+            // Arrays.sort();
+
+
+
+//   //Zadanie 1
+//       losowanie(zad_1);
+//
+//       System.out.println("");
+//
+//
+//       Arrays.sort(losowanie(zad_1));
+//
+//       System.out.println("");
+//
+//       for(int i =0; i<100;i++){
+//           System.out.println(zad_1[i]);
+//       }
+
+
+//       Zadanie 2
+
+            TreeSet<Integer> zad_2 = new TreeSet<Integer>();
+            for(int k =0;k<100;k++){
+                zad_2.add(k);
+            }
+
+            Iterator iter = zad_2.iterator();
+            while (iter.hasNext()) {
+                System.out.println(iter.next());
+            }
+
+            //ZaDANIE 3
+
+
+            Auta audi = new Auta ("Audi" , 2018);
+            Auta bmw = new Auta ("BMW" , 1995);
+            Auta mers = new Auta ("Mers" , 2014);
+
+            ArrayList<Auta> auta = new ArrayList<Auta>();
+            auta.add(audi);
+            auta.add(bmw);
+            auta.add(mers);
     }
     
 }
