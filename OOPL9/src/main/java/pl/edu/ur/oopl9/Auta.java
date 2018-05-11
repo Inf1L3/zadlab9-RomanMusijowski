@@ -1,6 +1,7 @@
 package pl.edu.ur.oopl9;
 
 public class Auta {
+
     private String nazwa;
     private int rok_produkcji;
 
